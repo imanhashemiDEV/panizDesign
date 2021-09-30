@@ -1,0 +1,725 @@
+/*
+1.  Reset CSS
+2.  Global CSS
+3.  Header CSS
+4.  Navigation CSS
+5.  Services
+6.  About CSS
+7.  Vision CSS
+8.  FastFood CSS
+9.  Latestnews CSS
+10. Customer CSS
+11. Contact CSS
+12. Footer CSS
+13. Tooltip CSS
+*/
+/*----------------------------1. Reset----------------------------*/
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:300, 500, 700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/eot/Vazir-Black-FD.eot");
+  src: url("../fonts/eot/Vazir-Black-FD.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/woff2/Vazir-Black-FD.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/Vazir-Black-FD.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/Vazir-Black-FD.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/Vazir-Bold-FD.eot");
+  src: url("../fonts/eot/Vazir-Bold-FD.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/woff2/Vazir-Bold-FD.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/Vazir-Bold-FD.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/Vazir-Bold-FD.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/Vazir-Medium-FD.eot");
+  src: url("../fonts/eot/Vazir-Medium-FD.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/woff2/Vazir-Medium-FD.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/Vazir-Medium-FD.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/Vazir-Medium-FD.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/Vazir-Light-FD.eot");
+  src: url("../fonts/eot/Vazir-Light-FD.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/woff2/Vazir-Light-FD.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/Vazir-Light-FD.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/Vazir-Light-FD.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/eot/Vazir-Light-FD.eot");
+  src: url("../fonts/eot/Vazir-Light-FD.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/woff2/Vazir-Light-FD.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/Vazir-Light-FD.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/Vazir-Light-FD.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/Vazir-FD.eot");
+  src: url("../fonts/eot/Vazir-FD.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/woff2/Vazir-FD.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/Vazir-FD.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/Vazir-FD.ttf")
+      format("truetype");
+}
+
+body {
+  font-family: vazir !important;
+}
+
+/*      Start My Style     */
+
+:root {
+  --primary-color: rgba(153, 38, 240, 0.95);
+  --secondary-color: rgba(209, 34, 227, 0.95);
+  --third-color:#f5e9fe;
+}
+.menu {
+  background: linear-gradient(to right,var(--primary-color),var(--secondary-color));
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: all 0.5s ease-in;
+  font-size: 13px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: lightgray !important;
+}
+
+.btn-rounded{
+  border: 0.1rem solid var(--third-color) !important;
+  font-size: 13px;
+} 
+
+.btn-rounded:hover{
+  background: linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+  color: white;
+}
+
+/* .btn-rounded span{
+  padding: 5px 10px;
+  background-color:var(--primary-color);
+  top:8%;
+  left:10px;
+
+} */
+
+
+.btn-rounded span{
+  padding: 3px 9px;
+  background-color:var(--primary-color);
+  
+}
+
+.btn-rounded:hover span{
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
+.btn-rounded span i {
+  color: white;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+/* start intro style */
+
+.intro{
+  width: 100%;
+  background: linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+}
+
+.intro-container{
+  padding-top: 100px;
+}
+
+.intro-container h1{
+  color: white;
+  font-weight: bold;
+}
+
+.intro-container p{
+  color: white;
+}
+
+
+/* company style */
+
+.company-section{
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.company-section h1{
+   font-weight: bold;
+}
+
+.company-section .space-line::before{
+  content: "";
+  height: 2px;
+  width: 85px;
+  display: block;
+  margin: 0 auto;
+  background-color:var(--primary-color);
+  
+}
+
+.company-section .space-line::after{
+  content: "";
+  height: 6px;
+  width: 20px;
+  background-color:var(--primary-color);
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+
+.company-section .card .card-body img{
+  height: 30px;
+}
+
+.company-section .card .card-body {
+  padding: 0.5rem 0.5rem !important;
+}
+
+.company-section .card .card-body img:hover{
+  filter: grayscale(0.9);
+}
+
+
+/* over-company style */
+
+.over-company-section{
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.over-company-section h1{
+   font-weight: bold;
+   font-size: 40px;
+}
+
+.over-company-section .space-line::before{
+  content: "";
+  height: 2px;
+  width: 115px;
+  background-color:var(--primary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+.over-company-section .space-line::after{
+  content: "";
+  height: 6px;
+  width: 25px;
+  background-color:var(--primary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+.over-company-section .over-company-description{
+  line-height: 30px;
+  text-align: center;
+}
+
+.over-company-section .over-company-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* service style */
+
+.service-section .service-image{
+    height: 400px;
+    width: 400px;
+}
+
+.service-section .icon{
+  color:var(--primary-color);
+  font-size: 35px;
+}
+
+.service-section .service-text{
+  font-size: 25px;
+  font-weight: bold;
+  background-image: linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.service-section .service-paragraph{
+   line-height: 25px;
+   text-align: justify;
+}
+
+
+/* slider-section style */
+
+.slider-section{
+  width: 100%;
+  background: linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+}
+
+.slider-section .slider-hr{
+  width: 100px ;
+  height: 3px;
+  margin: 10px auto;
+  background-color: #fff;
+}
+
+.slider-section .slider-header-text{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.slider-section .slider-client{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.slider-section .slider-card{
+  margin-bottom: 70px;
+}
+
+.slider-section .slider-button:hover{
+  color: black !important;
+}
+
+.slider-section .slider-owesome{
+  color: var(--primary-color);
+}
+
+.slider-section .slider-item-description{
+  line-height: 25px;
+}
+
+.slider-section .slider-card-color{
+  background-color:var(--third-color) !important;
+}
+
+.slider-section .slider-image-border{
+  border:4px solid var(--primary-color) !important;
+}
+
+.slider-section .slider-teacher-title{
+  font-size: 30px;
+}
+
+/* question section style */
+
+.question-section{
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.question-section h1{
+   font-weight: bold;
+   font-size: 40px;
+}
+
+.question-section .space-line::before{
+  content: "";
+  height: 2px;
+  width: 115px;
+  background-color:var(--primary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+.question-section .space-line::after{
+  content: "";
+  height: 6px;
+  width: 25px;
+  background-color:var(--primary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: var(--third-color) !important;
+  outline: var(--third-color) !important;
+}
+
+.accordion-button:focus{
+  outline: var(--third-color) !important;
+  border-color:var(--third-color) !important;
+  box-shadow: 0 0 0 0.25rem var(--third-color);
+}
+
+.accordion-button::after {
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239926f0'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e %3cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d122e3'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e  %3cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e");
+}
+
+/* course section style */
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover{
+  background-color: var(--primary-color) !important;
+}
+
+.course-cover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom: 0;
+  background-color:rgba(153, 38, 240, 0.7);;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.course-card:hover .course-cover{
+  visibility: visible;
+  opacity: 1;
+} 
+
+.course-title{
+  font-size: 25px;
+}
+
+.course-section .card-body {
+ 
+   padding: 0 !important; 
+}
+
+.course-section .card {
+  border:0 !important;
+}
+
+.course-card{
+  height: 230px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.course-card:hover img{
+  transform: scale(1.2,1.2);
+  transition: all 0.8s ease-in-out;
+} 
+
+.course-card .top-div{
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  height: 8px;
+  background-color: var(--secondary-color);
+}
+
+
+
+.contact-section{
+  width: 100%;
+  background-color: #e9ecef;
+}
+
+.contact-section .contact-text{
+  background-color: var(--primary-color)
+}
+
+.contact-section .contact-text{
+  background: linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+}
+
+.contact-section h1{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.contact-section p{
+  text-align: justify;
+}
+
+.contact-section .btn-contact{
+  background-color: var(--primary-color) !important;
+}
+
+.contact-section .btn-contact:hover{
+  background:linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+}
+
+.contact-section .form-text{
+  background-image: linear-gradient(to right,var(--primary-color),var(--secondary-color)) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.back-top{
+  height: 45px;
+  width: 45px;
+  padding: 7px;
+  background-color: var(--primary-color);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.back-top i{
+ position: absolute;
+ top: 50%;
+ transform: translate(-50%, -50%);
+}
